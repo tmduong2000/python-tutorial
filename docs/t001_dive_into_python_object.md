@@ -5,7 +5,7 @@ The main philosophy of Python is creating a truly object-oriented programming la
 import keyword
 print keyword.kwlist
 ```
-Let's reclaim the phrase "everything in Python is object **except keyword**" to "everything is instantiated by Python interpreter is an object".  Let's check a few example to understand Python object
+Let's reclaim the phrase "everything in Python is object **except keyword**" to "everything is instantiated by Python interpreter is an object".  Let's check a few examples to understand Python object
 
 ####Example 1: creating old-style class
 ```python
@@ -17,7 +17,7 @@ print Foo               # 2) output: __main__.Foo
 print repr(Foo)         # 3) output: <class __main__.Foo at 0x10047db48>
 
 ```
-At instruction print rep(Foo), we see the information regarding object Foo as 
+At instruction print repr(Foo), we see the information regarding object Foo as 
 ```text
 <class __main__.Foo at 0x10047db48>
 ```
@@ -39,7 +39,7 @@ print hex(id(Foo))      # 2) output: 0x10047db48
 
 ```
 
-Now, we can know that Foo object is 'classobj' type and its id is 0x10047db48.  Therefore, using keyword class to defining the representation of notation Foo of classobj type is an Python object.
+Now, we can know that Foo object is 'classobj' type and its id is 0x10047db48.  Therefore, using keyword **class** to defining the representation of notation Foo of classobj type is an Python object.
 
 
 ####Example 2: creating new-style class
@@ -68,7 +68,7 @@ Now, we know that notation Bar is type of type.  It has id and its based class i
 
 ####Example 3: verifying characteristics of class object - part 1
 
-Question: what is object?
+**Question**: what is object?
 
 There are million answers for this question, but the fundamental answer is an object is an instance of class where class is blueprint of group +/-attribute(s) or +/-method(s).
 
@@ -78,8 +78,8 @@ Now, if we are able to verify that class object Foo and Bar can have attribute, 
 ```python
 # 1) add class attribute to class object Foo
 # 2) add class attribute to class object Bar
-Foo.cls_attr = 'adding Foo class attribute'   # 1) add attire to Foo
-Bar.cls_attr = 'adding Bar class attribute'   # 1) add attire to Bar
+Foo.cls_attr = 'adding Foo class attribute'   # 1) add attribute to Foo
+Bar.cls_attr = 'adding Bar class attribute'   # 1) add attribute to Bar
 ```
 
 Bingo, we don't get any complaint message during assigned the attribute to instance of class object.  So, Foo and Bar meet the requirement that "everything is instantiated by Python interpreter is an object"
@@ -87,11 +87,15 @@ Bingo, we don't get any complaint message during assigned the attribute to insta
 
 ####Example 4: verifying characteristics of class object - part 2
 
-Question: Can class object create a new instance?
+**Question**: Can class object create a new instance?
 
-For class object Foo, we will ask question: **can class object Foo create new instance which type is Foo?**
+For class object Foo, we will ask question,
 
-For object Bar, we will ask question: **can Bar object whom type is type create new instance of which type is Bar?**
+* can **class object** Foo create new a instance which **type is Foo**?
+
+For object Bar, we will ask question,
+
+* can Bar object which **type is type** create a new instance of which **type is Bar**?
 
 The answer is, **Yes, we could**
 
@@ -109,10 +113,9 @@ print repr(instance_bar)      # output: <__main__.Bar object at 0x10049afd0>
 print hex(id(instance_bar)    # output: 0x10049afd0
 ```
 
-We see that both instance of Foo or Bar have allocated the memory at some locations.  The only difference between old-style and new-style is that Python interpreter see an new instance of class object as instonce while as object in new-style.
+We see that both instance of Foo or Bar have allocated the memory at some locations.  The only difference between old-style and new-style is that Python interpreter see **an new instance** of old-style as **instance** while as **object** in new-style.
 
 
 <hr>
-Please leave your comments to improve this blog.  Thanks you very much!
+Thanks you for viewing this article.  Please don’t be hesitate to contact [tmduong2000@yahoo.com](mailto:tmduong2000@yahoo.com) to discuss anything regarding Python object.
 <hr>
-
