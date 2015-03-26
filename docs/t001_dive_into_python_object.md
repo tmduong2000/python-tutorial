@@ -5,11 +5,7 @@ The main philosophy of Python is creating a truly object-oriented programming la
 import keyword
 print keyword.kwlist
 ```
-<<<<<<< HEAD
-Let's reclaim the phrase "everything in Python is object **except keyword**" to "everything is instantiated by Python interpreter is an object".  Let's check a few examples to understand Python object
-=======
 Let's reclaim the phrase "everything in Python is object **except keyword(s)**" to "everything is instantiated by Python interpreter is an object".  Let's check a few examples to understand Python object
->>>>>>> origin/master
 
 ####Example 1: creating old-style class
 ```python
