@@ -1,11 +1,15 @@
 ## Dive into Python Object
 
-The main philosophy of Python is creating a truly object-oriented programming language where it is based on the concepts of 'objects'.  So, we can say that everything in Python is object **except keyword**.  In general, keyword of Python interpreter is almost the same for many different Python flavor.  To find out which keywords are currently supported in our Python, we can run the small script to retrieve keywords:
+The main philosophy of Python is creating a truly object-oriented programming language where it is based on the concepts of 'objects'.  So, we can say that everything in Python is object **except keyword**.  In general, a group of keywords of Python interpreter is almost the same for various Python flavors.  To find out which a group of keywords is currently supported in our Python, we can run the small script to retrieve a list of keywords:
 ```python
 import keyword
 print keyword.kwlist
 ```
+<<<<<<< HEAD
 Let's reclaim the phrase "everything in Python is object **except keyword**" to "everything is instantiated by Python interpreter is an object".  Let's check a few examples to understand Python object
+=======
+Let's reclaim the phrase "everything in Python is object **except keyword(s)**" to "everything is instantiated by Python interpreter is an object".  Let's check a few examples to understand Python object
+>>>>>>> origin/master
 
 ####Example 1: creating old-style class
 ```python
