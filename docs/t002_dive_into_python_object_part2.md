@@ -10,8 +10,8 @@
 * [View object hierarchy](#view_object_hierarchy)
 
 <br>
-
-### Create Python object<span id='create_python_object'/>
+<a id="create_python_object" />
+### Create Python object
 There are several ways to create object in Python.  Python object can be created from built-in object such as object, int, float, dict, list, and so on or it can be created from user-defined type.
 
 1. using **class** keyword to create classobj.
@@ -46,8 +46,8 @@ anony_sqrt = lambda x: x * x
 # 8. from lambda execution
 val = anony_sqrt(3)
 ```
-
-### Object characteristics<span id='object_characteristics' />
+<a id="object_characteristics" />
+### Object characteristics
 
 1. object must has an identity.
 2. object must has type.
@@ -56,7 +56,8 @@ val = anony_sqrt(3)
 5. classobj can inherite from other classobj or built-in object.
 
 <br>
-**`Object must has an identity`**<span id='object_must_has_an_identity' />
+<a id="object_must_has_an_identity" />
+**`Object must has an identity`**
 ```python
 s = 'Hello World'           # creating string object which value is 'Hello World'
 print hex(id(s))			# id: 0x10287cc60
@@ -95,7 +96,8 @@ from Data model in url [docs.python.org](https://docs.python.org/2/reference/dat
 > **Objects are never explicitly destroyed**;  however, when they become unreachable they may be garbage-collected. An implementation is allowed to postpone garbage collection or omit it altogether — it is a matter of implementation quality how garbage collection is implemented, as long as no objects are collected that are still reachable.
 
 <br>
-**`Object must has type`**<span id='object_must_has_type' />
+<a id="object_must_has_type" />
+**`Object must has type`**
 
 ```python
 print str(type(s))      # output: <type 'str'>
@@ -105,7 +107,8 @@ print str(type(foo))    # output: <class '__main__.Foo'>
 ```
 
 <br>
-**`Object can store data`**<span id='object_can_store_data' />
+<a id="object_can_store_data" />
+**`Object can store data`**
 
 object **s** store value 'Hello world' or 'Hi'  
 object **i** store value 1 or 5   
@@ -138,7 +141,8 @@ foo.greeting = func_greeting   # store function into foo
 
 ```
 <br>
-**`classobj can inherite from other classobj`**<span id='classobj_can_inherite_from_other_classobj' />
+<a id="classobj_can_inherite_from_other_classobj" />
+**`classobj can inherite from other classobj`**
 
 ```python
 # inherite class Foo from built-in class object
@@ -156,7 +160,8 @@ class FooBarInt(Foo, Bar, int): pass
 ```
 
 <br><br>
-### View object hierarchy<span id='view_object_hierarchy' />
+<a id="view_object_hierarchy" />
+### View object hierarchy
 Starting from **new-style** class declaration, all user-defined classobj must inherite from built-in class to take the benefits (faster, safer, better garbage collection, OO, and more ...) of Python object.  classobj object is the top most base class in Python.
 
 ```python
