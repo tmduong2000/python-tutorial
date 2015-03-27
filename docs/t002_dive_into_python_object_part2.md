@@ -237,6 +237,8 @@ class FooBarInt(Foo, Bar, __builtin__.int)
 ...
 ...
 ```
-
-
+<br>
+<hr>
+Thanks you for viewing this article.  Please don’t be hesitate to contact [tmduong2000@yahoo.com](mailto:tmduong2000@yahoo.com) to discuss anything regarding Python object.
+<hr>
 
