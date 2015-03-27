@@ -5,7 +5,7 @@
    1. [object must has an identity](#object_must_has_an_identity)
    2. [object must has type](#object_must_has_type)
    3. [object can store data](#object_can_store_data)
-   4. [object can contains other object](#object_can_contains_other_object)
+   4. [object can contains other objects](#object_can_contains_other_objects)
    5. [classobj can inherite from other classobj](#classobj_can_inherite_from_other_classobj)
 * [View object hierarchy](#view_object_hierarchy)
 
@@ -122,6 +122,7 @@ foo.lst_data = ['abc', 'xyz', 1, 1.1, dict(item1='item abc', item2='item xyz')]
 ```
 
 <br>
+<a id="object_can_contains_other_objects" />
 **`object can contains other object(s)`**
 
 ```python
