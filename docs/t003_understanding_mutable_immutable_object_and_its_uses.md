@@ -39,7 +39,9 @@ print hex(id(foo))     # output: 0x1006a6310
 ####<span style='color:blue;'>Use case 1</span>: partition huge class into several modules
 suppose that our <strong style='color:blue;'>design spec.</strong> having one class that is huge and it is containing around +50 APIs and some APIs will need 100 - 200 lines of code and other API will have 30 - 80 lines of code.  We have three developers working on this class.  To optimize the source control, technical leader can layout this class into four files: clsABCLib.py, ABCAPI1to18.py, ABCAPI19to36.py, ABCAPI37to50.py, and then allocate the approriate task to developers.  Leader can quickly update or merge new changes to source control with minimal code conflict. 
 
+<br>
 
+Github [source code](https://github.com/tmduong2000/python-tutorial/tree/master/codes/t003_mutable_immutable_object/mutable): 
 ```python
 # file1: abcapi1to18.py
 def api_test1(self):
@@ -225,6 +227,8 @@ Design requirements for immutable class:
 * provides method(s) to communication with other object without changing its property(ies)
 * if tries to allocate new object to its property(ies), must raise exception
 
+<br>
+Github [source code](https://github.com/tmduong2000/python-tutorial/blob/master/codes/t003_mutable_immutable_object/immutable/immutablefoo.py):
 ```python
 ################################################################################
 # The MIT License (MIT)
